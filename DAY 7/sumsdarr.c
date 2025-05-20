@@ -1,0 +1,1 @@
+ if(i==j) sum+=arr[i][j];
