@@ -1,17 +1,19 @@
-//inserting a element//
-#include <stdio.h>//{2,3,11,4}
+#include <stdio.h>
 int main(){
     int n;
     scanf("%d",&n);
     int arr[n+1];
     for(int i=0;i<n;i++){
-        scanf("%d%d",&arr[i]);
+        scanf("%d",&arr[i]);
     }
     int val,pos;
     scanf("%d%d",&val,&pos);
-     for (int i=i;i<=n;i++){
-        arr[i]=arr[i+1];
-     }
-     arr [pos]
-
+    for(int i=n-1;i>=pos;i--)
+    {
+        arr[i+1]=arr[i];
+    }
+    arr[pos]=val;
+    for(int i=0;i<=n;i++){
+        printf("%d",arr[i]);
+    }
 }
